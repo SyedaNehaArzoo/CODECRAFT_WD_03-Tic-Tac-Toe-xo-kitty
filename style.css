@@ -1,0 +1,68 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: center;
+  background-color: #0b0c10;
+  color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff77ff;
+  text-shadow: 0 0 15px #ff00ff, 0 0 25px #ff33cc;
+  margin-bottom: 10px;
+}
+
+#status {
+  font-size: 1.3em;
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  background: #1f2833;
+  box-shadow: 0 0 10px #66fcf1, 0 0 25px #45a29e inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  color: #ff77ff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff77ff, 0 0 35px #66fcf1;
+}
+
+button {
+  background: #ff77ff;
+  color: #0b0c10;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 0 15px #ff00ff, 0 0 25px #66fcf1;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #66fcf1;
+  color: #0b0c10;
+  box-shadow: 0 0 20px #00ffff, 0 0 35px #ff77ff;
+}
